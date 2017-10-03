@@ -8,55 +8,110 @@ body {
     background-color: #C1B5AD;
 }
 
-#map {
-    height: 100vh;
-    width: 100vw;
+header {
+  /* width: calc(100vw - 6em); */
+  display: flex;
+  margin: 0 auto;
+  background-color: orange;
+  border-radius: 2em 2em 2em 2em;
+  /* justify-content: center; */
+
+}
+
+.logo {
+  flex: 1;
+  align-self: flex-start;
+  padding: 10px;
 }
 
 nav {
     display: flex;
-    flex-direction: row;
-    /* justify-content: flex-end; */
-}
-
-header {
-    width: calc(100vw - 6em);
-    margin: 0 4em;
-    display: flex;
-    /* flex-direction: row; */
-    margin: 0;
-    background-color: orange;
+    flex: 1;
+    justify-content: flex-end;
+    align-self: center;
+    padding: 30px;
 }
 
 nav .link {
     padding: 20px;
+    /* align-self: flex-end; */
 }
 
 nav a {
+    font-size: 180%;
     text-decoration: none;
     color: white
 }
 
 nav a:hover {
     text-decoration: none;
-    color: #ED1818
+    color: #ED1818;
+    font-size: 230%;
+    text-shadow: 3px 3px #000000;
 }
 
-.logo {
-    padding: 10px;
+#main {
+  display: flex;
+  /* justify-content: flex-end; */
+  flex-direction: row;
+  height: 100%;
+}
+
+#map {
+  display: flex;
+  flex: 1 66%;
+  /* height: 100vh; */
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-content: flex-start;
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 66%; */
+  height: 200px;
+}
+
+.interface {
+  display: flex;
+  flex-direction: column;
+  flex: 1 33%;
+  justify-content: flex-end;
+  align-self: flex-end;
+  align-content: flex-end;
 }
 
 .ui {
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
+    /* justify-content: flex-end; */
     background: green;
+    padding: 30px;
+    width: 33%;
+    /* z-index: 10; */
+}
+
+.ui-selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.ui label {
+  font-size: 200%;
+}
+
+.itinerary {
+  display: flex;
+  flex-direction: column;
+  width: 33%
 }
 
 .itntop {
-    background: yellow;
+  background: yellow;
+  padding: 10px;
 }
 
 .actv {
-    background: lightblue;
+  background: lightblue;
+  align-content: center;
+  padding: 15px;
 }

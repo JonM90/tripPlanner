@@ -1,14 +1,62 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #C1B5AD;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #C1B5AD;
 }
 
 #map {
-  height: 100vh;
-  width: 100vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+}
+
+header {
+    width: calc(100vw - 6em);
+    margin: 0 4em;
+    display: flex;
+    /* flex-direction: row; */
+    margin: 0;
+    background-color: orange;
+}
+
+nav .link {
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #ED1818
+}
+
+.logo {
+    padding: 10px;
+}
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    background: green;
+}
+
+.itntop {
+    background: yellow;
+}
+
+.actv {
+    background: lightblue;
 }

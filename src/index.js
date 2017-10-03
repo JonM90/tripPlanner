@@ -3,8 +3,9 @@ const buildMarker = require('./marker');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibW5ta3QiLCJhIjoiY2o4YnFvejE0MDB1aDJxcDcxaW1hbXppNiJ9.sWe9VtYqQYYIpZwvaZHxAg';
 
+// const myMap = document.getElementById('map')
 const map = new mapboxgl.Map({
-  container: "map",
+  container: 'map',
   center: [-74.009, 40.705], // FullStack coordinates
   zoom: 12, // starting zoom
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
